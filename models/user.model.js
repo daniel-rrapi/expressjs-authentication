@@ -1,11 +1,10 @@
 const mongoose = require("mongoose");
-const { use } = require("../routes/user.route");
 
 const userSchema = mongoose.Schema(
   {
     fullName: {
       type: String,
-      required: [true, "Please add the full name"],
+      required: [true, "Please add the fullname"],
     },
     email: {
       type: String,

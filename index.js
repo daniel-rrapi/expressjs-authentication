@@ -7,9 +7,9 @@ app.use(express.json());
 connectDb();
 
 app.use("/", require("./routes/user.route.js"));
-// Endpoint di esempio
+
 app.get("/", (req, res) => {
-  res.send("Benvenuto nel mio server Express.js con Mongoose!");
+  res.send("Hello world!");
 });
 
 app.listen(3000, () => {
