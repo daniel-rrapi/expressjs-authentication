@@ -26,7 +26,6 @@ const registerUser = asyncHandler(async (req, res) => {
     res.status(400);
     throw new Error("User data is not valid");
   }
-  res.json({ message: "Register the user" });
 });
 
 const loginUser = asyncHandler(async (req, res) => {
@@ -59,8 +58,6 @@ const loginUser = asyncHandler(async (req, res) => {
   }
 });
 
-const currentUser = asyncHandler(async (req, res) => {
-  res.json({ message: "User info" });
-});
+const currentUser = asyncHandler(async (req, res) => {});
 
 module.exports = { registerUser, loginUser, currentUser };
